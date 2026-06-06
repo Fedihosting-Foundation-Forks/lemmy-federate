@@ -41,7 +41,7 @@
 		"@types/jsonld": "1.5.15",
 		"@types/jsonwebtoken": "9.0.10",
 		"@types/ms": "2.1.0",
-		"@types/node": "^24.9.2",
+		"@types/node": "^25.9.1",
 		"@vitejs/plugin-vue": "6.0.1",
 		"@vue/tsconfig": "^0.8.1",
 		"prisma": "6.15.0",
