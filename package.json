@@ -22,7 +22,7 @@
 		"cookie": "1.0.2",
 		"hono": "^4.12.21",
 		"hono-rate-limiter": "^0.4.2",
-		"jsonld": "8.3.3",
+		"jsonld": "9.0.0",
 		"jsonwebtoken": "9.0.2",
 		"ky": "1.10.0",
 		"lemmy-js-client": "0.19.12-name-and-message.1",
