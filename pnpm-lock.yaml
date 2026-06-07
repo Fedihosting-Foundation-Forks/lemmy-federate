@@ -12,8 +12,8 @@ importers:
         specifier: ^1.19.13
         version: 1.19.13(hono@4.12.21)
       '@hono/trpc-server':
-        specifier: 0.4.0
-        version: 0.4.0(@trpc/server@11.8.0(typescript@5.9.2))(hono@4.12.21)
+        specifier: 0.4.2
+        version: 0.4.2(@trpc/server@11.8.0(typescript@5.9.2))(hono@4.12.21)
       '@mdi/font':
         specifier: 7.4.47
         version: 7.4.47
@@ -379,12 +379,12 @@ packages:
     peerDependencies:
       hono: ^4
 
-  '@hono/trpc-server@0.4.0':
-    resolution: {integrity: sha512-LGlJfCmNIGMwcknZEIYdujVMs9OkNVazhpOhaz3kTWOXvNL660VOHpvvktosCiJrajyBY1RtIJKQ+IKaQvNuSg==}
+  '@hono/trpc-server@0.4.2':
+    resolution: {integrity: sha512-3TDrc42CZLgcTFkXQba+y7JlRWRiyw1AqhLqztWyNS2IFT+3bHld0lxKdGBttCtGKHYx0505dM67RMazjhdZqw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@trpc/server': ^10.10.0 || >11.0.0-rc
-      hono: '>=4.*'
+      hono: '>=4.0.0'
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -1556,7 +1556,7 @@ snapshots:
     dependencies:
       hono: 4.12.21
 
-  '@hono/trpc-server@0.4.0(@trpc/server@11.8.0(typescript@5.9.2))(hono@4.12.21)':
+  '@hono/trpc-server@0.4.2(@trpc/server@11.8.0(typescript@5.9.2))(hono@4.12.21)':
     dependencies:
       '@trpc/server': 11.8.0(typescript@5.9.2)
       hono: 4.12.21
