@@ -15,6 +15,7 @@ const page = ref(1);
 const skip = computed(() => (page.value - 1) * perPage);
 const perPage = 10;
 const instanceId = ref<number | null>(null);
+const numberFormat = new Intl.NumberFormat();
 
 const { data, isPending, refetch } = useQuery({
 	queryKey: ["communities", page, perPage, instanceId],
@@ -155,16 +156,16 @@ const { mutate: submit } = useMutation({
       <v-col cols="12">
         <v-row dense>
           <v-col cols="12" md="6" lg="3">
-            <v-card class="mx-auto" subtitle="Instances" :title="data?.stats.instanceCount"></v-card>
+            <v-card class="mx-auto" subtitle="Instances" :title="data && numberFormat.format(data?.stats.instanceCount)"></v-card>
           </v-col>
           <v-col cols="12" md="6" lg="3">
-            <v-card class="mx-auto" subtitle="Communities" :title="data?.stats.communityCount"></v-card>
+            <v-card class="mx-auto" subtitle="Communities" :title="data && numberFormat.format(data?.stats.communityCount)"></v-card>
           </v-col>
           <v-col cols="12" md="6" lg="3">
-            <v-card class="mx-auto" subtitle="Federated by users" :title="data?.stats.completed"></v-card>
+            <v-card class="mx-auto" subtitle="Federated by users" :title="data && numberFormat.format(data?.stats.completed)"></v-card>
           </v-col>
           <v-col cols="12" md="6" lg="3">
-            <v-card class="mx-auto" subtitle="Federated by bots" :title="data?.stats.inprogress"></v-card>
+            <v-card class="mx-auto" subtitle="Federated by bots" :title="data && numberFormat.format(data?.stats.inprogress)"></v-card>
           </v-col>
         </v-row>
       </v-col>
