@@ -121,7 +121,7 @@ const { mutate: submit } = useMutation({
           <p class="mb-4">
             Lemmy Federate is a tool to help new threadiverse<sup>1</sup>
             communities grow.
-            <button @click="readMore = !readMore" variant="text" density="compact" class="text-primary">
+            <button type="button" @click="readMore = !readMore" variant="text" density="compact" class="text-primary">
               {{ readMore ? "read less" : "read more" }}
             </button>
           </p>
