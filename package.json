@@ -13,7 +13,7 @@
 		"check": "pnpm exec vue-tsc --build --noEmit && biome check --write ."
 	},
 	"dependencies": {
-		"@hono/node-server": "^1.19.13",
+		"@hono/node-server": "^2.0.4",
 		"@hono/trpc-server": "0.4.2",
 		"@mdi/font": "7.4.47",
 		"@prisma/client": "6.15.0",
