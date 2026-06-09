@@ -50,7 +50,7 @@ const { mobile: isMobile } = useDisplay();
           Star on Github
         </v-btn>
         <v-btn href="https://lemmyverse.link/c/lemmyfederate@lemmy.world" variant="text" class="text-none" target="_blank">
-          <img src="./assets/lemmy.svg" class="v-icon v-icon--size-x-large mr-2">
+          <img src="./assets/lemmy.svg" class="v-icon v-icon--size-x-large mr-2" alt="" aria-hidden="true">
           Subscribe on Lemmy
         </v-btn>
       </div>
