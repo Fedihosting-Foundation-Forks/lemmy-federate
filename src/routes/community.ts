@@ -1,6 +1,6 @@
-import { CommunityFollowStatus } from "@prisma/client";
 import { TRPCError } from "@trpc/server";
 import * as z from "zod/v4";
+import { CommunityFollowStatus } from "../generated/prisma/client.ts";
 import {
 	conditionalFollowWithAllInstances,
 	getClient,
