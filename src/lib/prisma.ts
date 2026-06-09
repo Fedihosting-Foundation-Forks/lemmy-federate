@@ -1,17 +1,23 @@
+import { PrismaPg } from "@prisma/adapter-pg";
+import { z } from "zod/v4";
 import {
 	FediseerUsage,
 	type Instance,
 	Mode,
 	NSFW,
 	PrismaClient,
-} from "@prisma/client";
-import { z } from "zod/v4";
+} from "../generated/prisma/client.ts";
+
+const adapter = new PrismaPg({
+	connectionString: process.env.DATABASE_URL,
+});
 
 const globalForPrisma = globalThis as unknown as { prisma: PrismaClient };
 
 export const prisma =
 	globalForPrisma.prisma ||
 	new PrismaClient({
+		adapter,
 		omit: { instance: { client_id: true, client_secret: true } },
 	});
 

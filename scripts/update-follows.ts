@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { CommunityFollowStatus } from "@prisma/client";
+import { CommunityFollowStatus } from "../src/generated/prisma/client.ts";
 import ms from "ms";
 import {
 	conditionalFollow,
