@@ -23,7 +23,7 @@
 		"hono": "^4.12.21",
 		"hono-rate-limiter": "^0.4.2",
 		"jsonld": "9.0.0",
-		"jsonwebtoken": "9.0.2",
+		"jsonwebtoken": "9.0.3",
 		"ky": "1.10.0",
 		"lemmy-js-client": "0.19.12-name-and-message.1",
 		"ms": "2.1.3",
