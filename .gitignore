@@ -21,3 +21,6 @@ logs
 .vscode/*
 !.vscode/settings.example.json
 !.vscode/launch.example.json
+
+# prisma
+/src/generated/prisma

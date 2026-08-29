@@ -1,5 +1,5 @@
-import type { Instance } from "@prisma/client";
 import { defineStore } from "pinia";
+import type { Instance } from "../../../src/generated/prisma/client.ts";
 import { type Serialize, trpc } from "../trpc.ts";
 
 export const useAuthStore = defineStore("auth", {

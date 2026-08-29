@@ -1,6 +1,6 @@
-import type { Prisma } from "@prisma/client";
 import { TRPCError } from "@trpc/server";
 import * as z from "zod/v4";
+import type { Prisma } from "../generated/prisma/client.ts";
 import { resetSubscriptions } from "../lib/federation-utils.ts";
 import { InstanceSchema, prisma } from "../lib/prisma.ts";
 import { isGenericAP } from "../lib/utils.ts";

@@ -1,3 +1,5 @@
+import { HTTPError, TimeoutError } from "ky";
+import ms from "ms";
 import {
 	type Community,
 	type CommunityFollow,
@@ -5,9 +7,7 @@ import {
 	FediseerUsage,
 	type Instance,
 	NSFW,
-} from "@prisma/client";
-import { HTTPError, TimeoutError } from "ky";
-import ms from "ms";
+} from "../generated/prisma/client.ts";
 import type { LFClient, LFCommunity } from "../types/LFClient.ts";
 import { ActivityPubClient } from "./activity-pub-client.ts";
 import { getCensuresGiven, getEndorsements } from "./fediseer.ts";
