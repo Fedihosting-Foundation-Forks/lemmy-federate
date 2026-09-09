@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^2.0.4
-        version: 2.0.4(hono@4.12.21)
+        version: 2.0.4(hono@4.13.5)
       '@hono/trpc-server':
         specifier: 0.4.2
-        version: 0.4.2(@trpc/server@11.8.0(typescript@5.9.2))(hono@4.12.21)
+        version: 0.4.2(@trpc/server@11.8.0(typescript@5.9.2))(hono@4.13.5)
       '@mdi/font':
         specifier: 7.4.47
         version: 7.4.47
@@ -30,11 +30,11 @@ importers:
         specifier: 1.0.2
         version: 1.0.2
       hono:
-        specifier: ^4.12.21
-        version: 4.12.21
+        specifier: ^4.13.5
+        version: 4.13.5
       hono-rate-limiter:
         specifier: ^0.4.2
-        version: 0.4.2(hono@4.12.21)
+        version: 0.4.2(hono@4.13.5)
       jsonld:
         specifier: 9.0.0
         version: 9.0.0
@@ -944,8 +944,8 @@ packages:
     peerDependencies:
       hono: ^4.1.1
 
-  hono@4.12.21:
-    resolution: {integrity: sha512-uV63apnb0kyPtAUwoWgaGh9HyIFcv8lgmzPZSiTBQAFOFGIzka5EZ1dZocmGnn0XdX0+XTqJ6Tqv7selMuGLRQ==}
+  hono@4.13.5:
+    resolution: {integrity: sha512-O6+/eCYRkzzzy0rPWwKLiGBR1nFuUPZynnwjxN1MBA62NNqbT0wQEzQyK2gSO5yDIDB336sXQleAhOHrzlYyKw==}
     engines: {node: '>=16.9.0'}
 
   hookable@5.5.3:
@@ -1548,14 +1548,14 @@ snapshots:
   '@esbuild/win32-x64@0.27.7':
     optional: true
 
-  '@hono/node-server@2.0.4(hono@4.12.21)':
+  '@hono/node-server@2.0.4(hono@4.13.5)':
     dependencies:
-      hono: 4.12.21
+      hono: 4.13.5
 
-  '@hono/trpc-server@0.4.2(@trpc/server@11.8.0(typescript@5.9.2))(hono@4.12.21)':
+  '@hono/trpc-server@0.4.2(@trpc/server@11.8.0(typescript@5.9.2))(hono@4.13.5)':
     dependencies:
       '@trpc/server': 11.8.0(typescript@5.9.2)
-      hono: 4.12.21
+      hono: 4.13.5
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
@@ -2118,11 +2118,11 @@ snapshots:
 
   he@1.2.0: {}
 
-  hono-rate-limiter@0.4.2(hono@4.12.21):
+  hono-rate-limiter@0.4.2(hono@4.13.5):
     dependencies:
-      hono: 4.12.21
+      hono: 4.13.5
 
-  hono@4.12.21: {}
+  hono@4.13.5: {}
 
   hookable@5.5.3: {}
 
